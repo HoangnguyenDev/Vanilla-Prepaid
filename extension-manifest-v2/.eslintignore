@@ -1,0 +1,20 @@
+# ESLint Ignore
+
+## Unit Test Files
+*.test.js
+*.test.jsx
+*.jsx.snap
+
+## Data Images
+app/data-images/
+
+## Precompiled
+app/templates/
+build/
+common/
+dist/
+docs/
+vendor/
+
+## Node Modules
+node_modules/

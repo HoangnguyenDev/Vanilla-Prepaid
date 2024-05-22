@@ -1,0 +1,31 @@
+{
+  "name": "ghostery-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "glossary-converter": "node tools/glossary-converter.js",
+    "postinstall": "patch-package && npm run postinstall --workspaces --if-present"
+  },
+  "devDependencies": {
+    "csv": "^6.2.5",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "license-report": "^6.5.0",
+    "patch-package": "^6.5.1",
+    "prettier": "^2.6.2"
+  },
+  "workspaces": [
+    "packages/*",
+    "extension-manifest-v2",
+    "extension-manifest-v3"
+  ],
+  "overrides": {
+    "ua-parser-js": "1.0.2"
+  },
+  "engineStrict": true,
+  "engines": {
+    "npm": ">=9.6.7"
+  }
+}

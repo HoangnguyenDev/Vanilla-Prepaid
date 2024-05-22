@@ -1,0 +1,27 @@
+{
+  "name": "@ghostery/ui",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Ghostery GmbH",
+  "license": "MPL-2.0",
+  "exports": {
+    "./onboarding": "./src/modules/onboarding/index.js",
+    "./onboarding/short": "./src/modules/onboarding/short.js",
+    "./panel": "./src/modules/panel/index.js",
+    "./trackers-preview": "./src/modules/trackers-preview/index.js",
+    "./youtube": "./src/modules/youtube/index.js",
+    "./youtube/wall": "./src/modules/youtube/wall.js",
+    "./categories": "./src/utils/categories.js",
+    "./labels": "./src/utils/labels.js",
+    "./wheel": "./src/utils/wheel.js",
+    "./iframe": "./src/utils/iframe.js"
+  },
+  "scripts": {
+    "lint": "eslint ./src",
+    "test": "npm run lint"
+  },
+  "dependencies": {
+    "@ghostery/libs": "^1.0.0",
+    "hybrids": "^8.2.23"
+  }
+}

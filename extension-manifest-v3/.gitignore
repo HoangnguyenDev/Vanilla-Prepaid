@@ -1,0 +1,13 @@
+build
+tmp
+dist
+src/_metadata
+src/rule_resources
+
+web-ext-artifacts/
+
+# xcode
+*.xcuserstate
+xcuserdata
+*.xcloc
+xcode/**/*/Package.resolved
